@@ -22,10 +22,10 @@ export class DashboardComponent {
   irHome(){
     this.router.navigate(["home"], {relativeTo: this.route})
   }
-  irProduct(){
+  irProducto(){
     this.router.navigate(["producto"], {relativeTo: this.route})
   }
-  irCategory(){
+  irCategoria(){
     this.router.navigate(["categoria"], {relativeTo: this.route})
   }
   irVenta(){
@@ -50,7 +50,7 @@ export class DashboardComponent {
     this.router.navigate(["entrada-producto"], {relativeTo: this.route})
   }
   irDetalleEntrada(){
-    this.router.navigate(["detalle-entrada"], {relativeTo: this.route})
+    this.router.navigate(["entrada-detalle"], {relativeTo: this.route})
   }
 
   salir(){

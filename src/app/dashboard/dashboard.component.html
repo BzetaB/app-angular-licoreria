@@ -2,15 +2,33 @@
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button>
-    <span>My App</span>
-    <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>favorite</mat-icon>
-    </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-      <mat-icon>share</mat-icon>
+    <span (click)="irHome()">App IDAT</span>&nbsp;&nbsp;
+    &nbsp;
+    <button mat-flat-button (click)="irColaborador()">Colaborador</button>
+    &nbsp;
+    <button mat-flat-button (click)="irCliente()">Cliente</button>
+    &nbsp;
+    <button mat-flat-button (click)="irEntradaProducto()">Entrada Producto</button>
+    &nbsp;
+    <button mat-flat-button (click)="irDetalleEntrada()">Entrada Producto Detalles</button>
+    &nbsp;
+    <button mat-flat-button (click)="irProducto()">Productos</button>
+    &nbsp;
+    <button mat-flat-button (click)="irCategoria()">Categorias</button>
+    &nbsp;
+    <button mat-flat-button (click)="irVenta()">Venta</button>
+    &nbsp;
+    <button mat-flat-button (click)="irDetalleVenta()">Detalle de Venta</button>
+    &nbsp;
+    <button mat-flat-button (click)="irComprobante()">Comprobantes</button>
+    &nbsp;
+    <button mat-flat-button (click)="irDespacho()">Despacho</button>
+    <span class="example-spacer"></span>    
+    <button (click)="salir()" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>logout</mat-icon>
     </button>
   </mat-toolbar>
+<hr />
   
 
 <router-outlet></router-outlet>

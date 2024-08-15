@@ -18,7 +18,7 @@ import { authGuard } from './auth.guard';
 export const routes: Routes = [
     {path: "login", component:LoginComponent},
     {path: "dashboard", component:DashboardComponent,
-        camActive:[authGuard],
+        canActivate:[authGuard],
         children:[
             {path:"home",component:HomeComponent},
             {path:"colaborador",component:ColaboradorListaComponent},
